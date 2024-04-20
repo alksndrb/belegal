@@ -1,7 +1,6 @@
 "use client";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-
+import usePath from "@/utils/usePath";
+import { Navbar, NavbarLink, NavbarLangSelector } from "./headerComponents";
 export default function Header() {
   const links = {
     en: [
@@ -19,38 +18,24 @@ export default function Header() {
       { id: 4, name: "Tim", src: "/team/sr" },
     ],
   };
-  const path = usePathname();
-  const lang = path.slice(path.length - 2) === "sr" ? "sr" : "en";
-  const pagePath =
-    lang === "en"
-      ? path
-      : path === "/sr"
-      ? "/"
-      : path.slice(0, path.length - 3);
+  const { lang, pagePath, pagePathSr } = usePath();
   const navLinks = links[lang].map((link) => (
-    <Link
-      href={link.src}
-      key={link.id}
-      className="mr-2 md:mr-3 lg:mr-4 hover:text-primary  tranisition-all ease duration-200"
-    >
+    <NavbarLink src={link.src} key={link.id}>
       {link.name}
-    </Link>
+    </NavbarLink>
   ));
-  const pagePathSr =
-    pagePath + pagePath.slice(pagePath.length - 1) === "/" ? "sr" : "/sr";
 
-  const langSelector =
-    lang === "en" ? (
-      <Link href={pagePathSr}>SRB</Link>
-    ) : (
-      <Link href={pagePath}>ENG</Link>
-    );
+  const langSelector = (
+    <NavbarLangSelector src={lang === "en" ? pagePathSr : pagePath}>
+      {lang === "en" ? "SRB" : "ENG"}
+    </NavbarLangSelector>
+  );
   return (
     <header>
-      <nav className="w-max hidden sm:flex uppercase text-base lg:text-xl font-semibold items-center">
+      <Navbar>
         {navLinks}
         {langSelector}
-      </nav>
+      </Navbar>
     </header>
   );
 }
