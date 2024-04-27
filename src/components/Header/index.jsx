@@ -1,6 +1,7 @@
 "use client";
 import usePath from "@/utils/usePath";
 import { Navbar, NavbarLink, NavbarLangSelector } from "./headerComponents";
+import { LogoAndNameSvg } from "../Logo/logoComponents";
 export default function Header() {
   const links = {
     en: [
@@ -33,6 +34,9 @@ export default function Header() {
   return (
     <header>
       <Navbar>
+        <div className="absolute left-10">
+          <LogoAndNameSvg />
+        </div>
         {navLinks}
         {langSelector}
       </Navbar>

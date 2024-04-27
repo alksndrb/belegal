@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Navbar({ children }) {
   return (
-    <nav className="w-max hidden sm:flex uppercase text-base lg:text-xl font-semibold items-center">
+    <nav className="flex justify-center items-center just h-[100px] py-2 px-10">
       {children}
     </nav>
   );
@@ -12,7 +12,7 @@ export function NavbarLink({ src, children }) {
   return (
     <Link
       href={src}
-      className="mr-2 md:mr-3 lg:mr-4 hover:text-primary  tranisition-all ease duration-200"
+      className="mx-5 text-lg h-fit relative slideFromLeftPrimary"
     >
       {children}
     </Link>
@@ -23,7 +23,8 @@ export function NavbarLangSelector({ src, children }) {
   return (
     <Link
       href={src}
-      className="mr-2 md:mr-3 lg:mr-4 hover:text-primary  tranisition-all ease duration-200"
+      className="mx-5 text-lg h-fit
+    "
     >
       {children}
     </Link>

@@ -1,10 +1,16 @@
 import Image from "next/image";
-import Logo from "@/components/Logo";
+import background from "../../public/background.jpg";
 export default function Home() {
   return (
     <>
-      <div className="text-9xl mt-10">HOME</div>
-      <Logo />
+      <div className="text-9xl">
+        <Image
+          src={background}
+          alt="start-background
+        "
+          className="h-[80vh] object-cover"
+        />
+      </div>
     </>
   );
 }

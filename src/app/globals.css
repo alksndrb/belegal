@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slideFromLeftPrimary {
+  overflow: hidden;
+  color: transparent;
+  background: linear-gradient(
+    to right,
+    rgb(24, 156, 167),
+    rgb(24, 156, 167) 50%,
+    black 50%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 350ms ease-out;
+}
+.slideFromLeftPrimary:hover {
+  background-position: 0 100%;
+}
+.slideFromLeftPrimary:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(24, 156, 167);
+  transform-origin: bottom left;
+  transition: transform 350ms ease-out;
+}
+.slideFromLeftPrimary:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
