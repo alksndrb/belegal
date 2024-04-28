@@ -1,8 +1,21 @@
 "use client";
 import usePath from "@/utils/usePath";
-import { Navbar, NavbarLink, NavbarLangSelector } from "./headerComponents";
-import { LogoAndNameSvg } from "../Logo/logoComponents";
+import {
+  Navbar,
+  NavbarLink,
+  NavbarLangSelector,
+  LogoAndNameSvg,
+  LogoSvg,
+  DropdownButton,
+} from "./headerComponents";
+import { useState } from "react";
+
 export default function Header() {
+  const [click, setClick] = useState(false);
+  function toggle() {
+    setClick(!click);
+  }
+
   const links = {
     en: [
       { id: 0, name: "Home", src: "/" },
@@ -34,11 +47,11 @@ export default function Header() {
   return (
     <header>
       <Navbar>
-        <div className="absolute left-10">
-          <LogoAndNameSvg />
-        </div>
+        <LogoAndNameSvg />
+        <LogoSvg />
         {navLinks}
         {langSelector}
+        <DropdownButton click={click} toggle={toggle} />
       </Navbar>
     </header>
   );
