@@ -5,33 +5,40 @@ import logoSvg from "../../../public/svg_emblem.svg";
 
 export function Navbar({ children }) {
   return (
-    <nav className="flex justify-center items-center h-[70px] py-2 px-10">
+    <nav className="relative flex justify-center items-center h-[70px] py-2 px-10 z-50 bg-light shadow-md">
       {children}
     </nav>
   );
 }
 
-export function NavbarLink({ src, children }) {
-  return (
+export function NavbarLinks({ links, lang, currentPageId }) {
+  const navLinks = links[lang].map((link) => (
     <Link
-      href={src}
-      className="hidden sm:block mx-2 md:mx-3 xl:mx-5 text-lg h-fit relative slideFromLeftPrimary "
+      href={link.src}
+      key={link.id}
+      className={
+        "hidden sm:block mx-2 md:mx-3 xl:mx-5 text-lg h-fit relative slideFromLeftPrimary " +
+        (link.id === currentPageId ? "active" : "")
+      }
+      disabled={link.id === currentPageId ? "true" : "false"}
     >
-      {children}
+      {link.name}
     </Link>
-  );
+  ));
+  return <>{navLinks}</>;
 }
 
-export function NavbarLangSelector({ src, children }) {
-  return (
+export function NavbarLangSelector({ lang, pagePath, pagePathSr }) {
+  const langSelector = (
     <Link
-      href={src}
-      className="hidden sm:block mx-2 md:mx-3 xl:mx-5 text-lg h-fit
+      href={lang === "en" ? pagePathSr : pagePath}
+      className="hidden sm:block mx-2 md:mx-3 xl:mx-5 text-lg h-fit z-40
     "
     >
-      {children}
+      {lang === "en" ? "SRB" : "ENG"}
     </Link>
   );
+  return <>{langSelector}</>;
 }
 
 export function LogoAndNameSvg() {
@@ -96,4 +103,50 @@ export function DropdownButton({ toggle, click }) {
   );
 }
 
-export function DropDownMenu({ navLink, langSelector }) {}
+export function DropDownMenu({
+  click,
+  handlePageChange,
+  links,
+  lang,
+  currentPageId,
+  pagePath,
+  pagePathSr,
+}) {
+  const navLinks = links[lang].map((link) => (
+    <Link
+      href={link.src}
+      key={link.id}
+      className={
+        "text-2xl py-2 border-b-2 w-[calc(100vw-40px)] text-center " +
+        (link.id === currentPageId ? "active" : "")
+      }
+      disabled={link.id === currentPageId ? "true" : "false"}
+      onClick={handlePageChange}
+    >
+      {link.name}
+    </Link>
+  ));
+  const langSelector = (
+    <Link
+      href={lang === "en" ? pagePathSr : pagePath}
+      className="text-2xl
+    "
+      onClick={handlePageChange}
+    >
+      {lang === "en" ? "SRB" : "ENG"}
+    </Link>
+  );
+  return (
+    <div
+      className="h-[calc(100vh-70px)] w-full bg-light absolute top-[70px] transition-all ease duration-300 z-40
+                flex flex-col justify-top items-center
+                "
+      style={{
+        top: click ? "70px" : "-100vh",
+      }}
+    >
+      {navLinks}
+      {langSelector}
+    </div>
+  );
+}

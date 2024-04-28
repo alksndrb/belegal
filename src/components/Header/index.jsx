@@ -2,20 +2,24 @@
 import usePath from "@/utils/usePath";
 import {
   Navbar,
-  NavbarLink,
+  NavbarLinks,
   NavbarLangSelector,
   LogoAndNameSvg,
   LogoSvg,
   DropdownButton,
+  DropDownMenu,
 } from "./headerComponents";
 import { useState } from "react";
+import getCurrentPage from "@/utils/getCurrentPage";
 
 export default function Header() {
   const [click, setClick] = useState(false);
   function toggle() {
     setClick(!click);
   }
-
+  function handlePageChange() {
+    setClick(false);
+  }
   const links = {
     en: [
       { id: 0, name: "Home", src: "/" },
@@ -33,26 +37,29 @@ export default function Header() {
     ],
   };
   const { lang, pagePath, pagePathSr } = usePath();
-  const navLinks = links[lang].map((link) => (
-    <NavbarLink src={link.src} key={link.id}>
-      {link.name}
-    </NavbarLink>
-  ));
-
-  const langSelector = (
-    <NavbarLangSelector src={lang === "en" ? pagePathSr : pagePath}>
-      {lang === "en" ? "SRB" : "ENG"}
-    </NavbarLangSelector>
-  );
+  const currentPageId = getCurrentPage(links, pagePath);
   return (
     <header>
       <Navbar>
         <LogoAndNameSvg />
         <LogoSvg />
-        {navLinks}
-        {langSelector}
+        <NavbarLinks links={links} lang={lang} currentPageId={currentPageId} />
+        <NavbarLangSelector
+          lang={lang}
+          pagePath={pagePath}
+          pagePathSr={pagePathSr}
+        />
         <DropdownButton click={click} toggle={toggle} />
       </Navbar>
+      <DropDownMenu
+        click={click}
+        handlePageChange={handlePageChange}
+        links={links}
+        lang={lang}
+        currentPageId={currentPageId}
+        pagePath={pagePath}
+        pagePathSr={pagePathSr}
+      />
     </header>
   );
 }

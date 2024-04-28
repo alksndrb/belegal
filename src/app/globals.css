@@ -38,3 +38,13 @@
   transform-origin: bottom left;
   transform: scaleX(1);
 }
+.active {
+  color: rgb(24, 156, 167);
+  background-position: 0 100%;
+  cursor: default;
+}
+
+.active:after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
