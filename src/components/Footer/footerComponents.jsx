@@ -11,7 +11,7 @@ import logoSvg from "../../../public/svg_emblem.svg";
 import Image from "next/image";
 export function FooterContent({ children }) {
   return (
-    <div className=" bg-light shadow-inner px-4">
+    <div className=" bg-light shadow-inner px-4 min-h-[210px]">
       <div className="max-w-[1280px] m-auto sm:flex justify-between py-5">
         {children}
       </div>
