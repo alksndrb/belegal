@@ -1,0 +1,7 @@
+{
+  "/team/page": "app/team/page.js",
+  "/team/sr/page": "app/team/sr/page.js",
+  "/about/sr/page": "app/about/sr/page.js",
+  "/core-practice/page": "app/core-practice/page.js",
+  "/sr/page": "app/sr/page.js"
+}

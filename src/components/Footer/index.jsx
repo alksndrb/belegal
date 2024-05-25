@@ -11,7 +11,6 @@ import {
 } from "./footerComponents";
 export default function Footer() {
   const { lang, pagePath, pagePathSr } = usePath();
-  const lang2 = lang;
   const contact = {
     en: {
       title: "Contact",
@@ -24,8 +23,7 @@ export default function Footer() {
         "Jurija Gagarina 14 E, stan broj 47, sedmi sprat, Belville, Beograd - Novi Beograd",
     },
   };
-  console.log(contact.en.title);
-  console.log(lang);
+
   return (
     <footer>
       <FooterContent>

@@ -27,7 +27,7 @@ export function LogoSvgLarge() {
     <Image
       src={logoSvg}
       alt="be-legal-logo"
-      className="w-[220px] sm:w-[170px] px-4 sm:px-0 m-auto sm:m-0 sm:ml-4 "
+      className="w-[220px] sm:w-[170px] pt-4 sm:pt-0 m-auto sm:m-0 sm:ml-4 "
     ></Image>
   );
 }

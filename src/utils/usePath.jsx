@@ -10,8 +10,7 @@ export default function usePath() {
       : path === "/sr"
       ? "/"
       : path.slice(0, path.length - 3);
-
   const pagePathSr =
-    pagePath + pagePath.slice(pagePath.length - 1) === "/" ? "sr" : "/sr";
+    pagePath + (pagePath.slice(pagePath.length - 1) === "/" ? "sr" : "/sr");
   return { lang, pagePath, pagePathSr };
 }
