@@ -1,44 +1,39 @@
 "use client";
 import usePath from "@/utils/usePath";
 import {
-  FooterAdress,
   FooterContent,
-  FooterEmail,
-  FooterPhone,
-  FooterSocials,
-  FooterTitle,
-  LogoSvgLarge,
+  FooterCopyrightText,
+  FooterLinks,
+  FooterLogo,
 } from "./footerComponents";
+
 export default function Footer() {
-  const { lang, pagePath, pagePathSr } = usePath();
-  const contact = {
-    en: {
-      title: "Contact",
-      address:
-        "Jurija Gagarina 14 E, door 47, floor 7, Belville, Belgrade - New Belgrade",
-    },
-    sr: {
-      title: "Kontakt",
-      address:
-        "Jurija Gagarina 14 E, stan broj 47, sedmi sprat, Belville, Beograd - Novi Beograd",
-    },
+  const links = {
+    en: [
+      { id: 0, name: "Home", src: "/" },
+      { id: 1, name: "About", src: "/about" },
+      { id: 2, name: "Contact", src: "/contact" },
+      { id: 3, name: "Core Practice", src: "/core-practice" },
+      { id: 4, name: "Team", src: "/team" },
+    ],
+    sr: [
+      { id: 0, name: "Početna", src: "/sr" },
+      { id: 1, name: "O nama", src: "/about/sr" },
+      { id: 2, name: "Kontakt", src: "/contact/sr" },
+      { id: 3, name: "Pravne Oblasti", src: "/core-practice/sr" },
+      { id: 4, name: "Tim", src: "/team/sr" },
+    ],
   };
+  const { lang, pagePath, pagePathSr } = usePath();
 
   return (
     <footer>
       <FooterContent>
-        <div>
-          <FooterTitle>
-            {lang === "en" ? contact.en.title : contact.sr.title}
-          </FooterTitle>
-          <FooterAdress>
-            {lang === "en" ? contact.en.address : contact.sr.address}
-          </FooterAdress>
-          <FooterEmail>office@gagiclaw.com</FooterEmail>
-          <FooterPhone>+381 64 474 00 08</FooterPhone>
-          <FooterSocials />
-        </div>
-        <LogoSvgLarge />
+        <FooterLogo />
+        <FooterLinks links={links} lang={lang} />
+        <FooterCopyrightText>
+          © 2024 BeLegal. All rights reserved.
+        </FooterCopyrightText>
       </FooterContent>
     </footer>
   );

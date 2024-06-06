@@ -1,85 +1,35 @@
-import {
-  AddressIcon,
-  EmailIcon,
-  FacebookIcon,
-  InstagramIcon,
-  LinkedinIcon,
-  PhoneIcon,
-  XIcon,
-} from "../Assets/icons";
-import logoSvg from "../../../public/svg_emblem.svg";
 import Image from "next/image";
+import logoAndNameSvg from "../../../public/svg.svg";
+import Link from "next/link";
 export function FooterContent({ children }) {
-  return (
-    <div className=" bg-light shadow-inner px-4 min-h-[210px]">
-      <div className="max-w-[1280px] m-auto sm:flex justify-between py-5">
-        {children}
-      </div>
-    </div>
-  );
-}
-export function FooterTitle({ children }) {
-  return <div className="pl-3 text-lg w-fit">{children}</div>;
+  return <div className=" bg-light shadow-inner py-5">{children}</div>;
 }
 
-export function LogoSvgLarge() {
+export function FooterLogo() {
   return (
-    <Image
-      src={logoSvg}
-      alt="be-legal-logo"
-      className="w-[220px] sm:w-[170px] pt-4 sm:pt-0 m-auto sm:m-0 sm:ml-4 "
-    ></Image>
-  );
-}
-export function FooterAdress({ children }) {
-  return (
-    <div className="flex pt-2 items-center text-sm gap-1">
-      <p className="w-[25px] h-[25px]">
-        <AddressIcon height={"25px"} width={"25px"} color={"black"} />
-      </p>
-      {children}
+    <div className="flex justify-center">
+      <Image
+        src={logoAndNameSvg}
+        alt="be-legal-logo"
+        className="w-[130px]"
+      ></Image>
     </div>
   );
 }
-export function FooterEmail({ children }) {
-  return (
-    <div className="flex pt-2 items-center text-sm gap-1">
-      <p className="w-[25px] h-[25px]">
-        <EmailIcon height={"25px"} width={"25px"} color={"black"} />
-      </p>
-      {children}
-    </div>
-  );
+
+export function FooterLinks({ links, lang }) {
+  const navLinks = links[lang].map((link, index) => (
+    <span key={link.id}>
+      <Link href={link.src} className={"text-base h-fit"}>
+        {link.name}
+      </Link>
+      {index < links[lang].length - 1 && <span className="px-3">|</span>}
+    </span>
+  ));
+  return <div className="text-center pt-3">{navLinks}</div>;
 }
-export function FooterPhone({ children }) {
+export function FooterCopyrightText({ children }) {
   return (
-    <div className="flex pt-2 items-center text-sm gap-1">
-      <p className="w-[25px] h-[25px]">
-        <PhoneIcon height={"25px"} width={"25px"} color={"black"} />
-      </p>
-      {children}
-    </div>
-  );
-}
-export function FooterSocials() {
-  return (
-    <div
-      className="flex pt-3 items-center gap-1
-  "
-    >
-      <p className="w-[25px] h-[25px]"></p>
-      <p className="w-[25px] h-[25px]">
-        <LinkedinIcon height={"25px"} width={"25px"} color={"black"} />
-      </p>
-      <p className="w-[25px] h-[25px]">
-        <InstagramIcon height={"25px"} width={"25px"} color={"black"} />
-      </p>
-      <p className="w-[25px] h-[25px]">
-        <FacebookIcon height={"25px"} width={"25px"} color={"black"} />
-      </p>
-      <p className="w-[25px] h-[25px] flex items-center justify-center">
-        <XIcon height={"20px"} width={"20px"} color={"black"} />
-      </p>
-    </div>
+    <div className="text-center text-sm text-gray-600 pt-3">{children}</div>
   );
 }

@@ -14,7 +14,7 @@ module.exports = {
         stripes: "url('/background.svg')",
       },
       colors: {
-        primary: "rgb(24,156,167)",
+        primary: "#189CA7",
         dark: "#1b1b1b",
         light: "#fff",
       },

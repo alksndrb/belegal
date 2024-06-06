@@ -5,8 +5,10 @@ import logoSvg from "../../../public/svg_emblem.svg";
 
 export function Navbar({ children }) {
   return (
-    <nav className="fixed w-[100vw] flex justify-center items-center h-[70px] py-2 px-10 z-50 bg-light shadow-md">
-      {children}
+    <nav className="fixed w-[100vw] flex h-[70px] py-2 px-2 z-50 bg-light shadow-md">
+      <div className="flex w-[1280px] m-auto justify-center items-center  relative">
+        {children}
+      </div>
     </nav>
   );
 }
@@ -46,7 +48,7 @@ export function LogoAndNameSvg() {
     <Image
       src={logoAndNameSvg}
       alt="be-legal-logo"
-      className="w-[200px] absolute sm:hidden lg:block left-5 xl:left-10"
+      className="w-[200px] absolute left-0 sm:hidden lg:block"
     ></Image>
   );
 }
@@ -56,7 +58,7 @@ export function LogoSvg() {
     <Image
       src={logoSvg}
       alt="be-legal-logo"
-      className="w-[50px] absolute hidden sm:block lg:hidden left-5"
+      className="w-[50px] absolute hidden sm:block lg:hidden left-0"
     ></Image>
   );
 }
