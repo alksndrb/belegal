@@ -17,7 +17,7 @@ export default function HomeSr() {
   ];
   return (
     <HomeLayout>
-      <Banner>Your Trusted Partner for Comprehensive Legal Solutions</Banner>
+      <Banner>Vaš pouzdan partner za sveobuhvatna pravna rešenja</Banner>
       <HomeAbout>
         <HomeSectionHeader>Naša Vizija</HomeSectionHeader>Advokatska kancelarija
         BeLegal osnovana je sa idejom da objedini sve pravne usluge u jednu
