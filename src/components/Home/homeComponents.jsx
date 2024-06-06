@@ -61,7 +61,7 @@ function HomeCorePractice({ link, children }) {
 
 export function HomePractices({ corePractice, children }) {
   return (
-    <div className="py-10 mx-4 flex flex-col-reverse md:flex-row pb-[70px]">
+    <div className="py-10 mx-4 flex flex-col md:flex-row pb-[70px]">
       <div className="md:w-[50%] lg:w-[60%] pb-4 md:pb-4 md:pr-4 flex flex-col justify-center gap-5">
         {children}
       </div>
