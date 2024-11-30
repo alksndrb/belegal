@@ -8,7 +8,7 @@ import { HomeLayout } from "@/components/Global/globalComponents";
 export default function Home() {
   const corePractice = [
     { name: "Commercial Law", link: "/core-practice/commercial-law" },
-    { name: "IT Law", link: "/core-practice/it-law" },
+    { name: "IT & AI Law", link: "/core-practice/it-law" },
     { name: "Environment Law", link: "/core-practice/environmental-law" },
     { name: "All services", link: "/core-practice/" },
   ];

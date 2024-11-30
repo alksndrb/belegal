@@ -20,11 +20,9 @@ export function Banner({ children }) {
         </div>
         <div className="h-full w-full bg-gradient-to-b from-primary/30 via-white/70 to-primary/30 absolute"></div>
         <div className="h-full w-full bg-gradient-to-b from-white/0 from-10% via-white/70 to-white/0 to-90% absolute"></div>
-        <div className="absolute inset-0 flex flex-col justify-center items-center sm:w-[40%] pb-[50px] gap-4 mx-4 sm:mx-[30%]"> 
-          <HomeLogoAndtext/>
-          <h2 className="text-3xl text-center sm:text-5xl">
-            {children}
-          </h2>
+        <div className="absolute inset-0 flex flex-col justify-center items-center sm:w-[40%] pb-[50px] gap-4 mx-4 sm:mx-[30%]">
+          <HomeLogoAndtext />
+          <h2 className="text-3xl text-center sm:text-4xl">{children}</h2>
         </div>
       </div>
     </>
@@ -47,7 +45,7 @@ export function HomeAbout({ children }) {
     </div>
   );
 }
-function HomeLogoAndtext(){
+function HomeLogoAndtext() {
   return (
     <Image
       src={logoAndNameSvg}

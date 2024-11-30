@@ -12,35 +12,120 @@ export default function CommercialLaw() {
       <PageHeader>Commercial Law</PageHeader>
       <CorePracticeLayout>
         <CorePracticeContent>
+          <br />
+          Our Law Office provides comprehensive legal services across all areas
+          of commercial law, assisting clients in navigating the legal
+          challenges of modern business. From corporate governance to complex
+          transactions, we offer strategic advice and tailored solutions that
+          help businesses succeed.
           <CorePracticeHeader2>Corporate</CorePracticeHeader2>
-          Registration of business entities and maintenance of their corporate
-          policy and acts. We provide legal advice on incorporation, choice of a
-          legal form, on defining interrelations of the shareholders and on
-          corporate governance issues.
-          <CorePracticeHeader2>M&A</CorePracticeHeader2>
-          We provide our clients with all of the legal support they need to
-          achieve their business objectives. We have advised companies of all
-          sizes in expanding their business operations in Serbia. We offer legal
-          advice and other legal assistance in all merger and acquisition
-          activities.
+          Our team delivers expert legal support for companies at every stage of
+          their lifecycle, including:
+          <ul class="list-disc pl-6">
+            <li>
+              Business formation and structuring: Advising on the most suitable
+              legal form for your business (LLC, JSC, partnerships, etc.) and
+              ensuring compliance with all registration requirements.
+            </li>
+            <li>
+              Corporate governance: Drafting internal policies, corporate
+              bylaws, and shareholder agreements to ensure smooth governance and
+              alignment with best practices.
+            </li>
+            <li>
+              Restructuring and reorganizations: Supporting companies through
+              mergers, demergers, spin-offs, and other restructuring processes,
+              ensuring seamless legal transitions.
+            </li>
+            <li>
+              Corporate compliance: Providing guidance on regulatory filings,
+              annual reporting, and adherence to Serbian corporate laws. Mergers
+              & Acquisitions (M&A).
+            </li>
+          </ul>
+          <CorePracticeHeader2>Commercial Contracts</CorePracticeHeader2>
+          We specialize in drafting, negotiating, and reviewing a wide range of
+          commercial agreements essential to business operations, such as:
+          <ul class="list-disc pl-6">
+            <li>Service agreements</li>
+            <li>Sales and purchase contracts</li>
+            <li>Distribution and supply chain agreements</li>
+            <li>Licensing and franchising contracts</li>
+            <li>Partnership and joint venture agreements</li>
+            <li>Non-disclosure agreements (NDAs)</li>
+          </ul>
+          Our goal is to craft clear, enforceable agreements that safeguard our
+          clients' interests and minimize potential risks.
+          <CorePracticeHeader2>
+            Mergers & Acquisitions (M&A)
+          </CorePracticeHeader2>
+          Our Law Office offers full legal support in all phases of mergers and
+          acquisitions, helping clients achieve their business objectives
+          efficiently and securely. We have successfully represented companies
+          of all sizes in expanding their operations through:
+          <ul class="list-disc pl-6">
+            <li>
+              Conducting due diligence processes to assess risks and
+              opportunities.
+            </li>
+            <li>
+              Structuring and negotiating M&A deals in alignment with regulatory
+              requirements.
+            </li>
+            <li>
+              Drafting transaction agreements, including sale and purchase
+              agreements (SPAs) and shareholders' agreements.
+            </li>
+            <li>
+              Managing regulatory approvals and compliance during and after the
+              transaction.
+            </li>
+          </ul>
           <CorePracticeHeader2>Banking & Finance</CorePracticeHeader2>
-          We advise banks, insurers, private equity funds, hedge funds,
-          investment firms and other financial institutions on all manner of
-          financial agreements, from structuring transactions to raising
-          capital, restructuring debt, project finance and loan and credit
-          agreements.
-          <CorePracticeHeader2>Competition</CorePracticeHeader2>
-          We have the knowledge to manage all competition needs and we advise on
-          cutting edge competition issues to a wide range of legal entities in
-          various sectors. BeLegal Office is experienced in proceedings on prior
-          notification of concentrations, analysis and representing clients in
-          case of mergers, acquisitions and joint ventures and in advising
-          clients regarding compliance with competition regulations.
-          <CorePracticeHeader2>State aid</CorePracticeHeader2>
-          Since transactions involving the public and government sector usually
-          include some form of government support, we advise clients in
-          structuring transactions to minimize exposure to state aid-related
-          risks and achieve successful cooperation with the public sector.
+          We provide expert legal advice to financial institutions, private
+          equity funds, investment firms, and businesses in matters related to:
+          <ul class="list-disc pl-6">
+            <li>Structuring transactions and raising capital.</li>
+            <li>
+              Drafting and negotiating loan agreements, credit facilities, and
+              project financing arrangements.
+            </li>
+            <li>Assisting with debt restructuring.</li>
+            <li>
+              Ensuring compliance with banking regulations and financial
+              industry standards.
+            </li>
+          </ul>
+          Our deep understanding of the financial sector enables us to offer
+          practical solutions that align with our clients' commercial
+          objectives.
+          <CorePracticeHeader2>Competition Law</CorePracticeHeader2>
+          Our expertise in competition law enables us to handle all aspects of
+          compliance and legal challenges in this field. We offer strategic
+          advice on cutting-edge competition matters to clients across diverse
+          sectors.
+          <br />
+          Our Law Office is well-versed in:
+          <ul class="list-disc pl-6">
+            <li>
+              Handling prior notifications of concentrations (mergers,
+              acquisitions, and joint ventures).
+            </li>
+            <li>Conducting in-depth market analyses.</li>
+            <li>
+              Representing clients in proceedings related to competition
+              compliance.
+            </li>
+            <li>
+              We ensure that our clients' operations align with Serbian and
+              international competition regulations.
+            </li>
+          </ul>
+          <CorePracticeHeader2>Antitrust</CorePracticeHeader2>
+          Our team provides the necessary legal support to ensure full
+          compliance with antitrust laws and safeguard our clients' rights to
+          fair market competition. We help businesses navigate regulatory
+          frameworks and address any antitrust concerns that may arise.
         </CorePracticeContent>
         <CorePracticeSidebar />
       </CorePracticeLayout>

@@ -12,24 +12,37 @@ export default function RealEstateAndConstruction() {
       <CorePracticeLayout>
         <CorePracticeContent>
           <br />
-          Our law office performs legal analyzes of property-legal documents
-          related to construction investments and transactions related to the
-          purchase and sale of real estate.
+          Our Law Office provides comprehensive legal services in the real
+          estate and construction sectors. We conduct detailed legal analyses of
+          property-related documents, ensuring that our clients' interests are
+          safeguarded in all transactions and investments.
           <br />
           <br />
-          Also, our team proactively participates in the negotiations and
-          preparation of pre-sale contracts and contracts for all types of real
-          estate. In this regard, we provide the entire spectrum of services
-          during the entire process of construction of facilities. We
-          participate in obtaining all kinds of permits in connection with the
-          construction of facilities and the realization of projects.
+          Our team plays an active role in negotiating and preparing all types
+          of contracts for real estate, including pre-sale agreements, purchase
+          agreements, lease agreements, and other property-related arrangements.
           <br />
           <br />
-          On the other hand, our specialized team provides legal services
-          related to public-private partnerships and concessions throughout the
-          entire process: representing clients before administrative
-          authorities, drafting contracts and participating in negotiations on
-          the realization of public-private partnerships.
+          In addition, our specialized team offers expert legal support for
+          public-private partnerships (PPPs) and concessions throughout the
+          entire process. This includes:
+          <br />
+          <br />
+          <ul class="list-disc pl-6">
+            <li>Representing clients before administrative authorities.</li>
+            <li>
+              Drafting contracts tailored to the specific partnership or
+              concession.
+            </li>
+            <li>
+              Actively participating in negotiations to ensure the successful
+              realization of public-private partnership projects.
+            </li>
+          </ul>
+          <br />
+          With a proactive and detail-oriented approach, we help our clients
+          navigate the complexities of real estate and construction law with
+          confidence.
         </CorePracticeContent>
         <CorePracticeSidebar />
       </CorePracticeLayout>

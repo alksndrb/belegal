@@ -21,7 +21,7 @@ export function CorePracticeSidebar() {
   const currentPageId = getCurrentPractice(corePractices, pagePath);
 
   return (
-    <div className="flex flex-col sm:w-[240px] h-fit sm:border-l-2 sm:pl-4 sm:pr-0 mt-5">
+    <div className="flex flex-col sm:w-[280px] h-fit sm:border-l-2 sm:pl-4 sm:pr-0 mt-5">
       {corePractices.map((practice, index) => (
         <Link
           href={practice.link}
@@ -43,7 +43,7 @@ export function CorePracticeSidebarSr() {
   const currentPageId = getCurrentPractice(corePracticesSr, pagePathSr);
   console.log(currentPageId);
   return (
-    <div className="flex flex-col sm:w-[240px] h-fit sm:border-l-2 sm:pl-4 mt-5">
+    <div className="flex flex-col sm:w-[280px] h-fit sm:border-l-2 sm:pl-4 mt-5">
       {corePracticesSr.map((practice, index) => (
         <Link
           href={practice.link}

@@ -8,7 +8,10 @@ import { HomeLayout } from "@/components/Global/globalComponents";
 export default function HomeSr() {
   const corePractice = [
     { name: "Privredno Pravo", link: "/core-practice/commercial-law/sr" },
-    { name: "IT Pravo", link: "/core-practice/it-law/sr" },
+    {
+      name: "IT i Veštačka Inteligencija (AI)",
+      link: "/core-practice/src/app/core-practice/it-and-ai-law/sr",
+    },
     {
       name: "Zaštita Životne Sredine",
       link: "/core-practice/environmental-law/sr",
@@ -17,7 +20,7 @@ export default function HomeSr() {
   ];
   return (
     <HomeLayout>
-      <Banner>Vaš pouzdan partner za sveobuhvatna pravna rešenja</Banner>
+      <Banner>Advokatska Kancelarija</Banner>
       <HomeAbout>
         <HomeSectionHeader>Naša Vizija</HomeSectionHeader>Advokatska kancelarija
         BeLegal osnovana je sa idejom da objedini sve pravne usluge u jednu
