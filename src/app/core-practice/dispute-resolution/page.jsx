@@ -17,13 +17,13 @@ export default function DisputeResolution() {
           disputes, offering practical and innovative legal solutions tailored
           to their strategic and commercial goals. We provide comprehensive
           legal support across the full spectrum of dispute resolution
-          mechanisms, ensuring that our clients’ interests are protected and
-          prioritized at every stage.
+          mechanisms, ensuring that our clients&apos; interests are protected
+          and prioritized at every stage.
           <CorePracticeHeader2>Preventive Legal Strategies</CorePracticeHeader2>
           We assist clients in identifying and mitigating potential risks that
           could lead to disputes, providing proactive legal advice to safeguard
           their operations and relationships. By focusing on prevention, we help
-          minimize disruptions to our clients' business activities.
+          minimize disruptions to our clients&apos; business activities.
           <CorePracticeHeader2>Litigation Services</CorePracticeHeader2>
           When disputes escalate, we provide strong representation in litigation
           proceedings before all courts and administrative bodies in Serbia. Our

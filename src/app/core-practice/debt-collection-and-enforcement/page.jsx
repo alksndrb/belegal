@@ -60,7 +60,7 @@ export default function DebtCollectionAndEnforcement() {
           With our expertise, clients can trust that their debt collection
           matters will be handled efficiently, professionally, and in full
           accordance with the law. We aim to deliver timely and effective
-          solutions that safeguard our clients' financial interests.
+          solutions that safeguard our clients&apos; financial interests.
         </CorePracticeContent>
         <CorePracticeSidebar />
       </CorePracticeLayout>

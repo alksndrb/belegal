@@ -23,8 +23,8 @@ export default function DataProtectionAndGDPR() {
           <ul class="list-disc pl-6">
             <li>
               Compliance assessments: We conduct thorough assessments to
-              evaluate an organization's current compliance with data protection
-              laws and identify any gaps or areas for improvement.
+              evaluate an organization&apos;s current compliance with data
+              protection laws and identify any gaps or areas for improvement.
             </li>
             <li>
               {" "}

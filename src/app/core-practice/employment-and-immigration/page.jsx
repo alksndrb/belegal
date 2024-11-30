@@ -16,7 +16,7 @@ export default function EmploymentAndImmigration() {
           employment law, assisting both employers and employees in navigating
           the complexities of labor regulations. We offer expert advice and
           support to ensure full compliance with employment laws, focusing on
-          the protection of workers' rights and the optimization of
+          the protection of workers&apos; rights and the optimization of
           employer-employee relationships.
           <br />
           <br />

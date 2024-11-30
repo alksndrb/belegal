@@ -14,8 +14,8 @@ export default function RealEstateAndConstruction() {
           <br />
           Our Law Office provides comprehensive legal services in the real
           estate and construction sectors. We conduct detailed legal analyses of
-          property-related documents, ensuring that our clients' interests are
-          safeguarded in all transactions and investments.
+          property-related documents, ensuring that our clients&apos; interests
+          are safeguarded in all transactions and investments.
           <br />
           <br />
           Our team plays an active role in negotiating and preparing all types

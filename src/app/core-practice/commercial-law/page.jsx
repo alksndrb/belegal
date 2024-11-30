@@ -55,7 +55,7 @@ export default function CommercialLaw() {
             <li>Non-disclosure agreements (NDAs)</li>
           </ul>
           Our goal is to craft clear, enforceable agreements that safeguard our
-          clients' interests and minimize potential risks.
+          clients&apos; interests and minimize potential risks.
           <CorePracticeHeader2>
             Mergers & Acquisitions (M&A)
           </CorePracticeHeader2>
@@ -74,7 +74,7 @@ export default function CommercialLaw() {
             </li>
             <li>
               Drafting transaction agreements, including sale and purchase
-              agreements (SPAs) and shareholders' agreements.
+              agreements (SPAs) and shareholders&apos; agreements.
             </li>
             <li>
               Managing regulatory approvals and compliance during and after the
@@ -97,7 +97,7 @@ export default function CommercialLaw() {
             </li>
           </ul>
           Our deep understanding of the financial sector enables us to offer
-          practical solutions that align with our clients' commercial
+          practical solutions that align with our clients&apos; commercial
           objectives.
           <CorePracticeHeader2>Competition Law</CorePracticeHeader2>
           Our expertise in competition law enables us to handle all aspects of
@@ -117,14 +117,14 @@ export default function CommercialLaw() {
               compliance.
             </li>
             <li>
-              We ensure that our clients' operations align with Serbian and
+              We ensure that our clients&apos; operations align with Serbian and
               international competition regulations.
             </li>
           </ul>
           <CorePracticeHeader2>Antitrust</CorePracticeHeader2>
           Our team provides the necessary legal support to ensure full
-          compliance with antitrust laws and safeguard our clients' rights to
-          fair market competition. We help businesses navigate regulatory
+          compliance with antitrust laws and safeguard our clients&apos; rights
+          to fair market competition. We help businesses navigate regulatory
           frameworks and address any antitrust concerns that may arise.
         </CorePracticeContent>
         <CorePracticeSidebar />

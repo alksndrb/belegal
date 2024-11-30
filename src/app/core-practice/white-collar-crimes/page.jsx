@@ -33,7 +33,7 @@ export default function WhiteCollarCrimes() {
             </li>
             <li>
               Criminal defense, delivering robust defense strategies to
-              safeguard clients' interests and reputation.
+              safeguard clients&apos; interests and reputation.
             </li>
           </ul>
         </CorePracticeContent>
