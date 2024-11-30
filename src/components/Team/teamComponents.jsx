@@ -64,7 +64,7 @@ export function ProfileImage() {
     <div className="md:w-[50%] lg:w-[30%] m-auto">
       <Image
         alt="img"
-        src={`/Gagic.jpeg`}
+        src={`/Gagic.png`}
         style={{
           width: "100%",
           height: "auto",
