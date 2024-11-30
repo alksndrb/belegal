@@ -14,7 +14,7 @@ export default function Home() {
   ];
   return (
     <HomeLayout>
-      <Banner>Your Trusted Partner for Comprehensive Legal Solutions</Banner>
+      <Banner>Law Firm</Banner>
       <HomeAbout>
         <HomeSectionHeader>Vision</HomeSectionHeader>BeLegal was founded with
         the idea to provide unique scope of legal services with the goal of

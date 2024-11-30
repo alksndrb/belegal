@@ -1,8 +1,9 @@
 import Image from "next/image";
-import background from "../../../public/banner.png";
+import background from "../../../public/banner.jpg";
 import about from "../../../public/homeAbout.jpeg";
 import { Briefcase, Laptop, Tree } from "../Assets/icons";
 import Link from "next/link";
+import logoAndNameSvg from "../../../public/svg.svg";
 
 export function Banner({ children }) {
   return (
@@ -17,12 +18,11 @@ export function Banner({ children }) {
             className="absolute object-cover object-right-top"
           />
         </div>
-        <div className="h-full w-full bg-gradient-to-b sm:bg-gradient-to-l from-white/0 to-white/100 absolute"></div>
-        <div className="absolute h-full w-full sm:w-[40%] flex flex-col justify-end sm:justify-center pb-[50px] py-4 sm:pl-[70px] gap-4">
-          <h1 className=" text-3xl text-center sm:text-start sm:text-5xl font-semibold text-gray-800">
-            BeLegal
-          </h1>
-          <h2 className="text-lg text-center sm:text-start sm:text-2xl">
+        <div className="h-full w-full bg-gradient-to-b from-primary/30 via-white/70 to-primary/30 absolute"></div>
+        <div className="h-full w-full bg-gradient-to-b from-white/0 from-10% via-white/70 to-white/0 to-90% absolute"></div>
+        <div className="absolute inset-0 flex flex-col justify-center items-center sm:w-[40%] pb-[50px] gap-4 mx-4 sm:mx-[30%]"> 
+          <HomeLogoAndtext/>
+          <h2 className="text-3xl text-center sm:text-5xl">
             {children}
           </h2>
         </div>
@@ -45,6 +45,15 @@ export function HomeAbout({ children }) {
         {children}
       </div>
     </div>
+  );
+}
+function HomeLogoAndtext(){
+  return (
+    <Image
+      src={logoAndNameSvg}
+      alt="be-legal-logo"
+      className="w-[200px]lg:block text-center"
+    ></Image>
   );
 }
 
