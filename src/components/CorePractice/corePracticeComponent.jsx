@@ -4,7 +4,7 @@ export function CorePracticeTile({ name, icon: IconComponent, link }) {
   return (
     <Link
       href={link}
-      className="flex h-[80px] justify-between px-5 lg:px-10 border-2 border-dark/70 text-xl items-center hover:bg-primary/10 hover:border-primary transition ease-in-out duration-300"
+      className="flex h-[80px] justify-between px-5 lg:px-10 border-2 border-dark/70 text-lg items-center hover:bg-primary/10 hover:border-primary transition ease-in-out duration-300"
     >
       {name}
       <IconComponent height={"25px"} width={"25px"} color={"#189CA7"} />

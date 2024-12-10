@@ -2,7 +2,6 @@
 import { usePathname } from "next/navigation";
 
 export default function usePathLanguage(link) {
-  console.log(link);
   const path = usePathname();
   const lang = path.slice(path.length - 2) === "sr" ? "sr" : "en";
   if (lang === "en") return link;

@@ -8,7 +8,7 @@ import { PageHeader, PageLayout } from "@/components/Global/globalComponents";
 export default function WhiteCollarCrimes() {
   return (
     <PageLayout>
-      <PageHeader>White Collad Crimes</PageHeader>
+      <PageHeader>White Collar Crimes</PageHeader>
       <CorePracticeLayout>
         <CorePracticeContent>
           <br />

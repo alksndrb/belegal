@@ -4,15 +4,18 @@ import {
   ProfileImage,
   ProfileInfo,
 } from "@/components/Team/teamComponents";
+import { team } from "@/data/teamData";
 
 export default function ProfilePage() {
   return (
     <>
       <PageLayout>
-        <PageHeader>Nikola Gagić</PageHeader>
+        <PageHeader>{team.gagic.name}</PageHeader>
         <ProfileGrid>
-          <ProfileImage />
-          <ProfileInfo>
+          <ProfileImage imgSrc={team.gagic.image} />
+          <ProfileInfo phone={team.gagic.phone} email={team.gagic.email}>
+            <br />
+            <p>Nikola je osnivač advokatske kancelarije Gagić.</p>
             <br />
             <p>
               Diplomirao je na Pravnom fakultetu Univerziteta u Beogradu, među
@@ -30,8 +33,8 @@ export default function ProfilePage() {
             </p>
             <br />
             <p>
-              <b>Oblasti: </b> Privredno pravo, Poresko pravo, IT pravo,
-              Energetika i Infrastruktura, Zaštita životne sredine
+              <b>Oblasti: </b> Privredno pravo, Nekretnine i izgradnja, Poresko
+              pravo, IT i AI pravo, Strana ulaganja, Privredni kriminal
             </p>
             <p></p>
           </ProfileInfo>

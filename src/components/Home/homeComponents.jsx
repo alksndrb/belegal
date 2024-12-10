@@ -4,7 +4,8 @@ import about from "../../../public/homeAbout.jpeg";
 import { Briefcase, Laptop, Tree } from "../Assets/icons";
 import Link from "next/link";
 import logoAndNameSvg from "../../../public/svg.svg";
-
+import { Playfair_Display } from "next/font/google";
+const playFair = Playfair_Display({ subsets: ["latin"] });
 export function Banner({ children }) {
   return (
     <>
@@ -22,7 +23,9 @@ export function Banner({ children }) {
         <div className="h-full w-full bg-gradient-to-b from-white/0 from-10% via-white/70 to-white/0 to-90% absolute"></div>
         <div className="absolute inset-0 flex flex-col justify-center items-center sm:w-[40%] pb-[50px] gap-4 mx-4 sm:mx-[30%]">
           <HomeLogoAndtext />
-          <h2 className="text-3xl text-center sm:text-4xl">{children}</h2>
+          <h2 className="text-4xl text-center lg:text-5xl">
+            <span className={playFair.className}>{children}</span>
+          </h2>
         </div>
       </div>
     </>

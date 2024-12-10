@@ -1,18 +1,21 @@
 import {
   BalanceScale,
-  Book,
   Briefcase,
   Building,
   Calculator,
   Clipboard,
-  FileContract,
   Gavel,
   Handshake,
-  Industry,
   Laptop,
   Lightbulb,
   Lock,
   Tree,
+  RocketIcon,
+  Globe,
+  Ball,
+  HandHoldingDollar,
+  UserTie,
+  BroadcastTower,
 } from "@/components/Assets/icons";
 import {
   CorePracticeGrid,
@@ -51,19 +54,19 @@ export const corePractices = [
   {
     name: "Startups",
     id: 4,
-    icon: Clipboard,
+    icon: RocketIcon,
     link: "/core-practice/startups",
   },
   {
     name: "Foreign Investments",
     id: 5,
-    icon: Clipboard,
+    icon: Globe,
     link: "/core-practice/foreign-investments",
   },
   {
     name: "Regulatory and Compliance",
     id: 6,
-    icon: Clipboard,
+    icon: BalanceScale,
     link: "/core-practice/regulatory-and-compliance",
   },
   {
@@ -81,7 +84,7 @@ export const corePractices = [
   {
     name: "Sports Law",
     id: 9,
-    icon: Clipboard,
+    icon: Ball,
     link: "/core-practice/sports-law",
   },
   {
@@ -93,7 +96,7 @@ export const corePractices = [
   {
     name: "Debt Collection and Enforcement",
     id: 11,
-    icon: Clipboard,
+    icon: HandHoldingDollar,
     link: "/core-practice/debt-collection-and-enforcement",
   },
   {
@@ -117,13 +120,13 @@ export const corePractices = [
   {
     name: "White Collar Crimes",
     id: 15,
-    icon: Clipboard,
+    icon: UserTie,
     link: "/core-practice/white-collar-crimes",
   },
   {
     name: "Media and Telecommuncations Law",
     id: 16,
-    icon: Clipboard,
+    icon: BroadcastTower,
     link: "/core-practice/media-and-telecommuncations-law",
   },
 ];

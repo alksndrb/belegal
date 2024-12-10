@@ -30,9 +30,9 @@ export default function Team() {
         </PageText>
         <TeamGrid>
           <ProfileCard profile={team.gagic} />
-          <ProfileCard profile={team.gagic} />
-          <ProfileCard profile={team.gagic} />
-          <ProfileCard profile={team.gagic} />
+          <ProfileCard profile={team.jakopcevic} />
+          <ProfileCard profile={team.masal} />
+          <ProfileCard profile={team.milivojevic} />
         </TeamGrid>
       </PageLayout>
     </>

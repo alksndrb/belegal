@@ -44,7 +44,9 @@ export function ContactAdress({ children }) {
       <p className="w-[25px] h-[25px]">
         <AddressIcon height={"25px"} width={"25px"} color={"#189CA7"} />
       </p>
-      {children}
+      <a href="https://www.google.com/maps/place/Gagic+Law+%7C+Advokatska+kancelarija+Gagi%C4%87/@44.805369,20.408955,16z/data=!4m6!3m5!1s0x475a6f0ec3d199dd:0x10bf65cabb8e75c5!8m2!3d44.8053685!4d20.4089545!16s%2Fg%2F11sct0j40q?hl=en&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D">
+        {children}
+      </a>
     </div>
   );
 }
@@ -54,7 +56,7 @@ export function ContactEmail({ children }) {
       <p className="w-[25px] h-[25px]">
         <EmailIcon height={"25px"} width={"25px"} color={"#189CA7"} />
       </p>
-      {children}
+      <a href={`mailto:${children}`}>{children}</a>
     </div>
   );
 }
@@ -63,8 +65,8 @@ export function ContactPhone({ children }) {
     <div className="flex pt-2 items-center text-sm gap-1 justify-center">
       <p className="w-[25px] h-[25px]">
         <PhoneIcon height={"25px"} width={"25px"} color={"#189CA7"} />
-      </p>
-      {children}
+      </p>{" "}
+      <a href={`tel:${children}`}>{children}</a>
     </div>
   );
 }
@@ -75,16 +77,24 @@ export function ContactSocials() {
   "
     >
       <p className="w-[25px] h-[25px]">
-        <LinkedinIcon height={"25px"} width={"25px"} color={"#189CA7"} />
+        <a href="$">
+          <LinkedinIcon height={"25px"} width={"25px"} color={"#189CA7"} />
+        </a>
       </p>
       <p className="w-[25px] h-[25px]">
-        <InstagramIcon height={"25px"} width={"25px"} color={"#189CA7"} />
+        <a href="$">
+          <InstagramIcon height={"25px"} width={"25px"} color={"#189CA7"} />
+        </a>
       </p>
       <p className="w-[25px] h-[25px]">
-        <FacebookIcon height={"25px"} width={"25px"} color={"#189CA7"} />
+        <a href="$">
+          <FacebookIcon height={"25px"} width={"25px"} color={"#189CA7"} />
+        </a>
       </p>
       <p className="w-[25px] h-[25px] flex items-center justify-center">
-        <XIcon height={"20px"} width={"20px"} color={"#189CA7"} />
+        <a href="$">
+          <XIcon height={"20px"} width={"20px"} color={"#189CA7"} />
+        </a>
       </p>
     </div>
   );

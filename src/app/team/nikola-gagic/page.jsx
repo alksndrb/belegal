@@ -4,15 +4,18 @@ import {
   ProfileImage,
   ProfileInfo,
 } from "@/components/Team/teamComponents";
+import { team } from "@/data/teamData";
 
 export default function ProfilePage() {
   return (
     <>
       <PageLayout>
-        <PageHeader>Nikola Gagić</PageHeader>
+        <PageHeader>{team.gagic.name}</PageHeader>
         <ProfileGrid>
-          <ProfileImage />
-          <ProfileInfo>
+          <ProfileImage imgSrc={team.gagic.image} />
+          <ProfileInfo phone={team.gagic.phone} email={team.gagic.email}>
+            <br />
+            <p>Nikola is the founder of the Gagić Law office.</p>
             <br />
             <p>
               He has graduated from the Faculty of Law, University of Belgrade,
@@ -27,11 +30,12 @@ export default function ProfilePage() {
             <p>He is fluent in Serbian and English and speaks German.</p>
             <br />
             <p>
-              <b>Practice Areas: </b> Corporate Law, Tax Law, IT Law, Energy and
-              Infrastructure, Environmental Law
+              <b>Practice Areas: </b> Corporate Law, Real Estate & Construction,
+              Tax Law, IT Law, Foreign Investments, White collar crimes
             </p>
             <p></p>
           </ProfileInfo>
+          <br />
         </ProfileGrid>
       </PageLayout>
     </>
