@@ -10,7 +10,7 @@ export default function HomeSr() {
     { name: "Privredno Pravo", link: "/core-practice/commercial-law/sr" },
     {
       name: "IT i Veštačka Inteligencija (AI)",
-      link: "/core-practice/src/app/core-practice/it-and-ai-law/sr",
+      link: "/core-practice/it-and-ai-law/sr",
     },
     {
       name: "Zaštita Životne Sredine",
