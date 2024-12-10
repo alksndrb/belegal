@@ -26,7 +26,7 @@ import {
   PageLayout,
   PageText,
 } from "@/components/Global/globalComponents";
-export const corePractices = [
+export const corePracticesSr = [
   {
     name: "Commercial Law",
     id: 0,
@@ -130,7 +130,7 @@ export const corePractices = [
     link: "/core-practice/media-and-telecommuncations-law",
   },
 ];
-export default function CorePractice() {
+export default function CorePracticeSr() {
   return (
     <>
       <PageLayout>
