@@ -33,7 +33,7 @@ export default function ProfilePage() {
               arbitražnim postupcima.
             </p>
             <br />
-            <p>Tečno govori engleski jezik i služi se nemačkim jezikom.</p>
+            <p>Tečno govori srpski i engleski.</p>
             <br />
             <p>
               <b>Oblasti: </b> Privredno pravo, Pravo intelektualne svojine,
