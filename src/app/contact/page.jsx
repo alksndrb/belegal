@@ -35,7 +35,7 @@ export default function Contact() {
           <ContactContentTile>
             <ContactHeader2>Contact Information</ContactHeader2>
             <ContactEmail>office@gagiclaw.com</ContactEmail>
-            <ContactPhone>+381 64 474 00 08</ContactPhone>
+            <ContactPhone>+381 64 30 000 21</ContactPhone>
           </ContactContentTile>
           <ContactContentTile>
             <ContactHeader2>Follow Us</ContactHeader2>

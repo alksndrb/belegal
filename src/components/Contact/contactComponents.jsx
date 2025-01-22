@@ -77,22 +77,22 @@ export function ContactSocials() {
   "
     >
       <p className="w-[25px] h-[25px]">
-        <a href="$">
+        <a href="#">
           <LinkedinIcon height={"25px"} width={"25px"} color={"#189CA7"} />
         </a>
       </p>
       <p className="w-[25px] h-[25px]">
-        <a href="$">
+        <a href="#">
           <InstagramIcon height={"25px"} width={"25px"} color={"#189CA7"} />
         </a>
       </p>
       <p className="w-[25px] h-[25px]">
-        <a href="$">
+        <a href="#">
           <FacebookIcon height={"25px"} width={"25px"} color={"#189CA7"} />
         </a>
       </p>
       <p className="w-[25px] h-[25px] flex items-center justify-center">
-        <a href="$">
+        <a href="#">
           <XIcon height={"20px"} width={"20px"} color={"#189CA7"} />
         </a>
       </p>

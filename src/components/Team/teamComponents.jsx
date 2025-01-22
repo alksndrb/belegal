@@ -91,17 +91,17 @@ export function ContactInfo({ phone, email }) {
       <p className="font-semibold">
         {lang === "en" ? "Contact Info:" : "Kontakt Informacije:"}
       </p>
-      <br />
+      {/* <br />
       <span className="flex">
         <PhoneIcon height={"25px"} width={"25px"} color={"#189CA7"} />
         <a className="pl-2" href={`tel:${phone}`}>
           {phone}
         </a>
       </span>
-      <br />
+      <br /> */}
       <span className="flex">
         <EmailIcon height={"25px"} width={"25px"} color={"#189CA7"} />
-        <a className="pl-2" href={`mailto:${email}`}>
+        <a className="pl-2 color-primary" href={`mailto:${email}`}>
           {email}
         </a>
       </span>
