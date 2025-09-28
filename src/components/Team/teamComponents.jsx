@@ -7,9 +7,7 @@ import usePathLanguage from "@/utils/usePathLanguage";
 import { EmailIcon, LinkedinIcon, PhoneIcon } from "../Assets/icons";
 import usePath from "@/utils/usePath";
 
-export function ProfileCard({ profile }) {
-  console.log(profile.link);
-  console.log(usePathLanguage(profile.link));
+export function ProfileCard({ profile, language }) {
   return (
     <div className="flex justify-center group">
       <div
@@ -31,6 +29,9 @@ export function ProfileCard({ profile }) {
           transition ease-in-out duration-300"
         >
           {profile.name}
+          <div className="font-semibold pb-2">
+            {language == "en" ? profile.role : profile.roleSr}
+          </div>
           <div className="flex justify-center">
             <a href={`mailto:${profile.email}`} className="pr-6">
               <EmailIcon height={"25px"} width={"25px"} color={"#189CA7"} />

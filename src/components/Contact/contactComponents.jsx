@@ -10,14 +10,17 @@ import {
 
 export function MapComponent() {
   return (
-    <div className="h-[300px] sm:h-[500px] my-4">
-      <iframe
-        className="w-full h-full grayscale-[70%]"
-        src="https://maps.google.com/maps?hl=en&amp;q=+(GagicLaw)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        allowFullScreen=""
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
+    <div className="my-10 flex justify-center">
+      <div className="relative w-full max-w-5xl rounded-xl overflow-hidden shadow-xl border border-gray-200">
+        {/* Map */}
+        <iframe
+          className="w-full h-[350px] sm:h-[500px] grayscale-[30%] contrast-110 hover:grayscale-0 hover:contrast-100 transition duration-500"
+          src="https://maps.google.com/maps?hl=en&amp;q=+(GagicLaw)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
   );
 }

@@ -62,7 +62,7 @@ function HomeCorePractice({ link, children }) {
   return (
     <Link
       href={link}
-      className="py-10 flex flex-col justify-center items-center border-2 border-gray-500 hover:bg-primary/10 hover:border-primary transition ease-in-out duration-300"
+      className="py-10 flex flex-col justify-center items-center text-center border-2 border-gray-500 hover:bg-primary/10 hover:border-primary transition ease-in-out duration-300"
     >
       {children}
     </Link>
@@ -71,12 +71,15 @@ function HomeCorePractice({ link, children }) {
 
 export function HomePractices({ corePractice, children }) {
   return (
-    <div className="py-10 mx-4 flex flex-col md:flex-row pb-[70px]">
-      <div className="md:w-[50%] lg:w-[60%] pb-4 md:pb-4 md:pr-4 flex flex-col justify-center gap-5">
+    <div className="py-10 mx-4 pb-[70px] flex flex-col gap-8">
+      {/* Text section (unchanged) */}
+      <div className="w-full flex flex-col justify-center gap-5">
         {children}
       </div>
-      <div className="md:w-[50%] lg:w-[40%] ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+      {/* Tiles section (centered with max width) */}
+      <div className="w-full max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           <HomeCorePractice link={corePractice[0].link}>
             <Briefcase height={"25px"} width={"25px"} color={"#189CA7"} />
             {corePractice[0].name}

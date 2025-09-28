@@ -1,39 +1,35 @@
+// Footer.jsx
 "use client";
 import usePath from "@/utils/usePath";
 import {
   FooterContent,
-  FooterCopyrightText,
-  FooterLinks,
   FooterLogo,
+  FooterLinks,
+  FooterContact,
 } from "./footerComponents";
 
 export default function Footer() {
   const links = {
     en: [
-      { id: 0, name: "Home", src: "/" },
-      { id: 1, name: "About", src: "/about" },
-      { id: 2, name: "Contact", src: "/contact" },
-      { id: 3, name: "Core Practice", src: "/core-practice" },
-      { id: 4, name: "Team", src: "/team" },
+      { id: 0, name: "Blog", src: "/blog" },
+      { id: 1, name: "Core Practice", src: "/core-practice" },
+      { id: 2, name: "Team", src: "/team" },
     ],
     sr: [
-      { id: 0, name: "Početna", src: "/sr" },
-      { id: 1, name: "O nama", src: "/about/sr" },
-      { id: 2, name: "Kontakt", src: "/contact/sr" },
-      { id: 3, name: "Pravne Oblasti", src: "/core-practice/sr" },
-      { id: 4, name: "Tim", src: "/team/sr" },
+      { id: 0, name: "Blog", src: "/blog/sr" },
+      { id: 1, name: "Pravne Oblasti", src: "/core-practice/sr" },
+      { id: 2, name: "Tim", src: "/team/sr" },
     ],
   };
-  const { lang, pagePath, pagePathSr } = usePath();
+
+  const { lang } = usePath();
 
   return (
     <footer>
       <FooterContent>
-        <FooterLogo />
+        <FooterLogo lang={lang} />
+        <FooterContact lang={lang} />
         <FooterLinks links={links} lang={lang} />
-        <FooterCopyrightText>
-          © 2024 BeLegal. All rights reserved.
-        </FooterCopyrightText>
       </FooterContent>
     </footer>
   );

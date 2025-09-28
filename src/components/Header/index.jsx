@@ -27,6 +27,7 @@ export default function Header() {
       { id: 2, name: "Contact", src: "/contact" },
       { id: 3, name: "Core Practice", src: "/core-practice" },
       { id: 4, name: "Team", src: "/team" },
+      { id: 5, name: "Blog", src: "/blog" },
     ],
     sr: [
       { id: 0, name: "Početna", src: "/sr" },
@@ -34,6 +35,7 @@ export default function Header() {
       { id: 2, name: "Kontakt", src: "/contact/sr" },
       { id: 3, name: "Pravne Oblasti", src: "/core-practice/sr" },
       { id: 4, name: "Tim", src: "/team/sr" },
+      { id: 5, name: "Blog", src: "/blog/sr" },
     ],
   };
   const { lang, pagePath, pagePathSr } = usePath();

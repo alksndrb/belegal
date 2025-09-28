@@ -6,6 +6,8 @@ export const team = {
     phone: "+381 64 474 00 08",
     email: " nikola.gagic@belegal.rs",
     linkedin: "http://linkedin.com/in/nikola-gagić-881b77198",
+    role: "Partner",
+    roleSr: "Partner",
   },
   jakopcevic: {
     name: "David Jakopčević",
@@ -14,6 +16,8 @@ export const team = {
     phone: "",
     email: "david.jakopcevic@belegal.rs",
     linkedin: "http://linkedin.com/in/david-jakopčević-545a6417b",
+    role: "Partner",
+    roleSr: "Partner",
   },
   milivojevic: {
     name: "Nikola Milivojević",
@@ -22,6 +26,8 @@ export const team = {
     phone: "",
     email: "nikola.milivojevic@belegal.rs",
     linkedin: "http://linkedin.com/in/nikola-milivojević-8696201a5",
+    role: "Partner",
+    roleSr: "Partner",
   },
   masal: {
     name: "Nikola Masal",
@@ -30,5 +36,7 @@ export const team = {
     phone: "",
     email: "nikola.masal@belegal.rs; ",
     linkedin: "https://linkedin.com/in/nikola-masal",
+    role: "Attorney at Law",
+    roleSr: "Advokat",
   },
 };
